@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xanadu Realty — Marketing Copy & Platform Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D1B2A;
+    --navy-light: #1B2D42;
+    --off-white: #F7F5F0;
+    --warm-white: #FFFDF9;
+    --text-primary: #0D1B2A;
+    --text-secondary: #5A6475;
+    --text-muted: #8C95A3;
+    --border: #E4E0D8;
+    --meta-blue: #1877F2;
+    --meta-light: #EBF2FF;
+    --google-green: #0F9D58;
+    --google-light: #E8F5E9;
+    --wa-teal: #25D366;
+    --wa-light: #E8F8EE;
+    --web-coral: #E76A3B;
+    --web-light: #FEF1EB;
+    --sms-amber: #C07D0A;
+    --sms-light: #FEF8E7;
+    --principle-purple: #6B4FBB;
+    --principle-light: #F0ECFC;
+    --accent: #C8A96A;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--off-white);
+    color: var(--text-primary);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* HEADER */
+  .doc-header {
+    background: var(--navy);
+    color: white;
+    padding: 64px 80px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .doc-header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -40px;
+    width: 320px; height: 320px;
+    border: 60px solid rgba(200,169,106,0.12);
+    border-radius: 50%;
+  }
+  .doc-header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; right: 120px;
+    width: 200px; height: 200px;
+    border: 40px solid rgba(200,169,106,0.08);
+    border-radius: 50%;
+  }
+  .header-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  .header-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 680px;
+  }
+  .header-title em {
+    color: var(--accent);
+    font-style: italic;
+  }
+  .header-sub {
+    color: rgba(255,255,255,0.6);
+    font-size: 16px;
+    max-width: 560px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+  .header-meta {
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+  }
+  .header-meta span { display: flex; align-items: center; gap: 6px; }
+
+  /* TOC */
+  .toc-section {
+    background: var(--warm-white);
+    border-bottom: 1px solid var(--border);
+    padding: 40px 80px;
+  }
+  .toc-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  .toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+  }
+  .toc-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.15s;
+    border: 1px solid transparent;
+  }
+  .toc-item:hover { background: var(--off-white); border-color: var(--border); }
+  .toc-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+
+  /* MAIN CONTENT */
+  .main { padding: 0 80px 80px; }
+
+  /* SECTION */
+  .section {
+    margin-top: 64px;
+  }
+  .section-header {
+    display: flex; align-items: flex-start; gap: 20px;
+    padding: 32px 0 24px;
+    border-bottom: 2px solid var(--text-primary);
+    margin-bottom: 36px;
+  }
+  .platform-badge {
+    padding: 6px 14px;
+    border-radius: 40px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 34px;
+    line-height: 1.15;
+  }
+  .section-desc {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-top: 6px;
+    max-width: 640px;
+  }
+
+  /* CARDS & GRIDS */
+  .card {
+    background: var(--warm-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  .card-title {
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+
+  /* CHARACTER LIMIT TABLE */
+  .limit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .limit-table th {
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 11px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border);
+    background: var(--off-white);
+  }
+  .limit-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+  .limit-table tr:last-child td { border-bottom: none; }
+  .limit-table tr:hover td { background: var(--off-white); }
+  .char-count {
+    font-family: 'DM Sans', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  .char-strict {
+    background: #FEF1EB;
+    border-color: #F4A57A;
+    color: var(--web-coral);
+  }
+  .char-warn {
+    background: #FEF8E7;
+    border-color: #E8C870;
+    color: var(--sms-amber);
+  }
+  .field-name { font-weight: 500; }
+  .field-note { font-size: 13px; color: var(--text-secondary); margin-top: 3px; }
+
+  /* DO/DON'T */
+  .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+  .do-box, .dont-box {
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 14px;
+  }
+  .do-box { background: #E8F8EE; border-left: 3px solid var(--wa-teal); }
+  .dont-box { background: #FEF1EB; border-left: 3px solid var(--web-coral); }
+  .do-label, .dont-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; margin-bottom: 10px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .do-label { color: #0A6B33; }
+  .dont-label { color: #A03820; }
+  .example-item { margin-bottom: 8px; line-height: 1.5; }
+  .example-item:last-child { margin-bottom: 0; }
+
+  /* COPY EXAMPLE BOX */
+  .copy-example {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 12px;
+  }
+  .copy-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .copy-text { color: var(--text-primary); }
+  .copy-char {
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  .copy-char.over { color: var(--web-coral); font-weight: 600; }
+
+  /* HEADLINE GRID */
+  .headline-grid { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+  .headline-pill {
+    display: flex; align-items: center; justify-content: space-between;
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    gap: 12px;
+  }
+  .headline-pill-text { flex: 1; font-weight: 500; }
+  .headline-pill-count {
+    font-size: 12px; white-space: nowrap;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .headline-pill-count.good { color: var(--google-green); font-weight: 600; }
+  .headline-pill-count.warn { color: var(--sms-amber); font-weight: 600; }
+  .headline-pill-count.over { color: var(--web-coral); font-weight: 600; }
+
+  /* CALLOUT */
+  .callout {
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .callout-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+  .callout-info { background: #EBF2FF; border-left: 3px solid var(--meta-blue); }
+  .callout-warn { background: var(--sms-light); border-left: 3px solid var(--sms-amber); }
+  .callout-tip { background: var(--principle-light); border-left: 3px solid var(--principle-purple); }
+  .callout strong { font-weight: 600; }
+
+  /* CHECKLIST */
+  .checklist { list-style: none; margin-top: 14px; }
+  .checklist li {
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    line-height: 1.5;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .check-icon { width: 18px; height: 18px; border-radius: 50%; flex-shrink: 0; margin-top: 1px;
+    display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; }
+  .check-yes { background: var(--wa-light); color: var(--google-green); }
+  .check-rule { background: var(--web-light); color: var(--web-coral); }
+
+  /* METRIC STAT */
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .stat-box {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .stat-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+
+  /* DIVIDER */
+  .sub-section { margin-top: 36px; }
+  .sub-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* FOOTER */
+  .doc-footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    padding: 32px 80px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .doc-footer strong { color: rgba(255,255,255,0.85); }
+
+  /* PLATFORM COLORS */
+  .badge-meta { background: var(--meta-light); color: var(--meta-blue); }
+  .badge-google { background: var(--google-light); color: #0A7A46; }
+  .badge-wa { background: var(--wa-light); color: #1A8A48; }
+  .badge-web { background: var(--web-light); color: #B44B22; }
+  .badge-sms { background: var(--sms-light); color: var(--sms-amber); }
+  .badge-principles { background: var(--principle-light); color: var(--principle-purple); }
+
+  .dot-meta { background: var(--meta-blue); }
+  .dot-google { background: var(--google-green); }
+  .dot-wa { background: var(--wa-teal); }
+  .dot-web { background: var(--web-coral); }
+  .dot-sms { background: var(--sms-amber); }
+  .dot-principles { background: var(--principle-purple); }
+
+  .platform-bar {
+    display: flex; align-items: center; gap: 8px;
+    margin-bottom: 20px;
+  }
+  .platform-bar-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .platform-bar-name {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  /* IMPORTANT TAG */
+  .tag-important {
+    display: inline-block;
+    background: #FEE2E2;
+    color: #991B1B;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 2px 7px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .tag-new {
+    display: inline-block;
+    background: var(--google-light);
+    color: #0A7A46;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 2px 7px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  @media print {
+    body { background: white; }
+    .section { break-inside: avoid; }
+    .doc-header { background: var(--navy) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="doc-header">
+  <div class="header-eyebrow">Xanadu Realty · Internal Reference · Marketing Team</div>
+  <h1 class="header-title">The <em>Copy & Platform</em> Guide for Marketing</h1>
+  <p class="header-sub">Everything the Marketing team needs to write copy that works — platform character limits, A/B testing best practices, hashtag rules, website conversion guidelines, and real estate-specific examples. Written so Digital can deploy without back-and-forth.</p>
+  <div class="header-meta">
+    <span>📅 2025–26 · MMR Market</span>
+    <span>📋 Version 1.0</span>
+    <span>👥 For: Marketing Team</span>
+    <span>🔁 Works with: Team Digital</span>
+  </div>
+</div>
+
+<!-- TOC -->
+<div class="toc-section">
+  <div class="toc-label">Contents</div>
+  <div class="toc-grid">
+    <a href="#meta" class="toc-item"><span class="toc-dot dot-meta"></span>Meta Ads (Facebook + Instagram)</a>
+    <a href="#google" class="toc-item"><span class="toc-dot dot-google"></span>Google Ads (Search + Display)</a>
+    <a href="#whatsapp" class="toc-item"><span class="toc-dot dot-wa"></span>WhatsApp Copy</a>
+    <a href="#sms" class="toc-item"><span class="toc-dot dot-sms"></span>SMS Templates</a>
+    <a href="#website" class="toc-item"><span class="toc-dot dot-web"></span>Website Conversion Basics</a>
+    <a href="#principles" class="toc-item"><span class="toc-dot dot-principles"></span>Real Estate Copy Principles</a>
+  </div>
+</div>
+
+<div class="main">
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  META ADS                                  -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="meta">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Meta Ads</div>
+      <div class="section-desc">Facebook & Instagram. Where ~60–70% of your digital budget goes and where most pseudo campaigns start. The platform has multiple ad fields — each with its own limit and its own audience exposure.</div>
+    </div>
+    <span class="platform-badge badge-meta">Facebook · Instagram</span>
+  </div>
+
+  <!-- Character Limits Table -->
+  <div class="card">
+    <div class="card-title">Character Limits — What Marketing Must Know</div>
+    <table class="limit-table">
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Limit</th>
+          <th>Visible to user</th>
+          <th>Notes for Marketing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="field-name">Primary Text</div>
+            <div class="field-note">The main copy above the image/video</div>
+          </td>
+          <td><span class="char-count char-warn">125 chars</span><br><span style="font-size:12px;color:var(--text-muted)">before "See more"</span></td>
+          <td>First 125 chars shown without tap. Up to 2,200 allowed.</td>
+          <td>Your hook <strong>must land in the first 125 characters</strong>. After that, users have to tap "See more." Write the most important line first.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="field-name">Headline</div>
+            <div class="field-note">Bold text below the image</div>
+          </td>
+          <td><span class="char-count char-strict">27–40 chars</span></td>
+          <td>27 chars on mobile feed; 40 on desktop. Gets cut off silently.</td>
+          <td><strong>Write to 27 characters for safety.</strong> This is the single most-read line in the ad — make it count. Provide at least 5 headline variations so Digital can A/B test.</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="field-name">Description</div>
+            <div class="field-note">Smaller text below headline</div>
+          </td>
+          <td><span class="char-count">30 chars</span></td>
+          <td>Only shown on desktop feed. Not visible on mobile.</td>
+          <td>Use for price or CTA reinforcement. Don't put critical info here — mobile users won't see it.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Why 5 headlines -->
+  <div class="sub-section">
+    <div class="sub-title">Why Marketing Must Always Provide 5+ Headline Options</div>
+    <div class="callout callout-tip">
+      <span class="callout-icon">💡</span>
+      <div>
+        <strong>Meta's automatic A/B testing:</strong> When Digital sets up an ad set, they can enter multiple headlines and Meta's algorithm automatically rotates them — showing different versions to different users and identifying which drives the most leads. If Marketing provides only one headline, Digital loses this optimization advantage and CPL (cost per lead) goes up. <strong>Always give Digital 5 headlines to choose from.</strong>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <div class="copy-label">Example — 5 Headline Variations for a 2BHK Launch in Thane</div>
+      <div class="headline-grid">
+        <div class="headline-pill">
+          <span class="headline-pill-text">2BHK Starting ₹85L | Thane West</span>
+          <span class="headline-pill-count good">31 chars ✓</span>
+        </div>
+        <div class="headline-pill">
+          <span class="headline-pill-text">Book Your Dream Home in Thane</span>
+          <span class="headline-pill-count good">29 chars ✓</span>
+        </div>
+        <div class="headline-pill">
+          <span class="headline-pill-text">Stop Renting. Own from ₹85L.</span>
+          <span class="headline-pill-count good">28 chars ✓</span>
+        </div>
+        <div class="headline-pill">
+          <span class="headline-pill-text">2BHK Near Thane Station | Ready</span>
+          <span class="headline-pill-count good">31 chars ✓</span>
+        </div>
+        <div class="headline-pill">
+          <span class="headline-pill-text">Limited Units — Register Now</span>
+          <span class="headline-pill-count good">28 chars ✓</span>
+        </div>
+        <div class="headline-pill" style="border-color: var(--web-coral);">
+          <span class="headline-pill-text">Luxury 2BHK Homes in the Heart of Thane West</span>
+          <span class="headline-pill-count over">45 chars ✗ — gets cut</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Text Examples -->
+  <div class="sub-section">
+    <div class="sub-title">Primary Text — How to Structure It</div>
+    <div class="two-col">
+      <div>
+        <div class="copy-label">Good — Hook lands in first 125 chars</div>
+        <div class="copy-example">
+          <div class="copy-text">Tired of paying ₹25,000/month in rent? Own a 2BHK in Thane West starting at just ₹85L — with a no-EMI period for the first 12 months.</div>
+          <div style="font-size:13px; color: var(--text-secondary); margin-top:10px; padding-top:10px; border-top: 1px solid var(--border);">✅ Ready-to-move | ✅ RERA Registered | ✅ Walkable to Thane Station<br><br>📞 Register for a free site visit → [Link]</div>
+          <div class="copy-char">First 125 chars: "Tired of paying ₹25,000/month in rent? Own a 2BHK in Thane West starting at just ₹85L — with a no-EMI period for" → Hook complete ✓</div>
+        </div>
+      </div>
+      <div>
+        <div class="copy-label">Weak — Hook buried after "See more"</div>
+        <div class="copy-example">
+          <div class="copy-text" style="color: var(--web-coral);">Welcome to [Project Name], a thoughtfully designed residential community by [Developer] located in the vibrant neighbourhood of Thane West, one of Mumbai Metropolitan Region's most sought-after...</div>
+          <div style="font-size:13px; margin-top:10px; padding-top:10px; border-top: 1px solid var(--border); color: var(--text-muted);">↳ Buried. "See more" triggered after 125 chars. User scrolls away.</div>
+          <div class="copy-char over">Price, USP, CTA all hidden behind "See more." ✗</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hashtag rules -->
+  <div class="sub-section">
+    <div class="sub-title">Hashtag Rules — Facebook vs. Instagram</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="platform-bar"><span class="platform-bar-dot" style="background:var(--meta-blue)"></span><span class="platform-bar-name">Facebook</span></div>
+        <ul class="checklist">
+          <li><span class="check-icon check-rule">!</span><strong>Avoid hashtags</strong> in Facebook ad copy. They do not improve reach in ads and can look spammy. Facebook's algorithm in ads does not use hashtags for discovery the way organic posts do.</li>
+          <li><span class="check-icon check-yes">✓</span>If you must use hashtags in organic Facebook posts (not ads), use 1–3 maximum.</li>
+          <li><span class="check-icon check-yes">✓</span>Use CTA text instead of hashtags — "Register now," "Book a site visit," "WhatsApp us" convert far better.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="platform-bar"><span class="platform-bar-dot" style="background:#E1306C"></span><span class="platform-bar-name">Instagram</span></div>
+        <ul class="checklist">
+          <li><span class="check-icon check-yes">✓</span>For Instagram <strong>ads</strong>: use 3–5 highly relevant hashtags. More does not mean more reach in ads.</li>
+          <li><span class="check-icon check-yes">✓</span>For Instagram <strong>organic posts</strong> (reels, carousels): 5–10 targeted hashtags. Place at the end of caption, not mixed into text.</li>
+          <li><span class="check-icon check-rule">!</span>Do not use generic hashtags like #realestate or #mumbai — these drown in volume. Use specific ones: #ThaneWest2BHK #MumbaiHomes #XanaduRealty</li>
+          <li><span class="check-icon check-rule">!</span>Never use banned/irrelevant hashtags. Instagram suppresses reach when these are detected.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase specific copy -->
+  <div class="sub-section">
+    <div class="sub-title">What to Write — Phase by Phase</div>
+    <div class="three-col">
+      <div class="card">
+        <div class="card-title" style="color: var(--sms-amber);">Pseudo Phase</div>
+        <div style="font-size:14px; color: var(--text-secondary); margin-bottom:12px;">Before pricing is revealed. Build curiosity.</div>
+        <ul style="font-size:14px; padding-left:16px; color: var(--text-primary);">
+          <li style="margin-bottom:6px;">Use location & lifestyle cues</li>
+          <li style="margin-bottom:6px;">Indicative price: "Starting ~₹85L"</li>
+          <li style="margin-bottom:6px;">CTA: "Register your interest"</li>
+          <li style="margin-bottom:6px;">No floor plans, no exact sizes</li>
+          <li>Intrigue > Information</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color: var(--meta-blue);">Teaser Phase</div>
+        <div style="font-size:14px; color: var(--text-secondary); margin-bottom:12px;">Post CP Meet. Countdown energy.</div>
+        <ul style="font-size:14px; padding-left:16px; color: var(--text-primary);">
+          <li style="margin-bottom:6px;">Build urgency: "Launching soon"</li>
+          <li style="margin-bottom:6px;">Drive pre-registrations</li>
+          <li style="margin-bottom:6px;">CTA: "Pre-register for priority pricing"</li>
+          <li style="margin-bottom:6px;">Tease the campaign theme/visual</li>
+          <li>Countdown if date confirmed</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color: var(--google-green);">Reveal + Mop Up</div>
+        <div style="font-size:14px; color: var(--text-secondary); margin-bottom:12px;">Full launch. Drive bookings.</div>
+        <ul style="font-size:14px; padding-left:16px; color: var(--text-primary);">
+          <li style="margin-bottom:6px;">Exact price, config, carpet area</li>
+          <li style="margin-bottom:6px;">Pay plan as USP</li>
+          <li style="margin-bottom:6px;">CTA: "Book now / Site visit"</li>
+          <li style="margin-bottom:6px;">Mop up: "Limited units left"</li>
+          <li>Social proof if available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  GOOGLE ADS                                -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="google">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Google Ads</div>
+      <div class="section-desc">Search captures high-intent buyers actively looking. Display re-targets those who've visited your landing pages. These users are already in the market — copy must be direct and keyword-rich.</div>
+    </div>
+    <span class="platform-badge badge-google">Search · Display · YouTube</span>
+  </div>
+
+  <div class="callout callout-info" style="margin-bottom:28px;">
+    <span class="callout-icon">ℹ️</span>
+    <div>
+      <strong>Responsive Search Ads (RSA) — the key format:</strong> Google lets you supply up to 15 headlines and 4 descriptions. Google's AI then tests different combinations automatically and shows the best-performing mix to each user. <strong>Marketing should aim for 10+ headlines and 3–4 descriptions</strong> so Google has enough combinations to optimise.
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Character Limits — Google Responsive Search Ads</div>
+    <table class="limit-table">
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Limit per entry</th>
+          <th>How many to provide</th>
+          <th>Shown at once</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="field-name">Headlines</div></td>
+          <td><span class="char-count char-strict">30 chars</span></td>
+          <td><strong>Min 5, aim for 10–15</strong></td>
+          <td>3 headlines shown at a time</td>
+          <td>Each headline must make sense alone — they appear in different combinations. Never write a headline that relies on another headline for context.</td>
+        </tr>
+        <tr>
+          <td><div class="field-name">Descriptions</div></td>
+          <td><span class="char-count char-warn">90 chars</span></td>
+          <td><strong>Min 2, aim for 3–4</strong></td>
+          <td>2 descriptions shown at a time</td>
+          <td>Include price, CTA, and a USP. Google shows any combination of 2 — each should be independently strong.</td>
+        </tr>
+        <tr>
+          <td><div class="field-name">Display URL Path</div></td>
+          <td><span class="char-count">15 chars each</span><br>(2 fields)</td>
+          <td>1 each</td>
+          <td>Both shown</td>
+          <td>Example: yoursite.com/<strong>thane</strong>/<strong>2bhk</strong>. Keyword-rich path improves click-through. Digital typically handles this.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-title">Example — Google Search Headlines for a Thane 2BHK Launch</div>
+    <div class="callout callout-warn" style="margin-bottom:16px;">
+      <span class="callout-icon">⚠️</span>
+      <div><strong>No full-stops or commas at the end of Google headlines.</strong> Google may reject them. Also avoid punctuation that only makes sense in one combination — each headline must read independently.</div>
+    </div>
+    <div class="headline-grid">
+      <div class="headline-pill"><span class="headline-pill-text">2BHK Homes in Thane West</span><span class="headline-pill-count good">25 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Starting ₹85 Lakh Only</span><span class="headline-pill-count good">21 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">RERA Registered Project</span><span class="headline-pill-count good">23 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Book a Free Site Visit Today</span><span class="headline-pill-count good">27 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">No EMI for 12 Months</span><span class="headline-pill-count good">20 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Ready-to-Move 2BHK Thane</span><span class="headline-pill-count good">25 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Near Thane Railway Station</span><span class="headline-pill-count good">25 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Limited Units — Register Now</span><span class="headline-pill-count good">28 ✓</span></div>
+      <div class="headline-pill"><span class="headline-pill-text">Pay 10% Now, Rest on Possession</span><span class="headline-pill-count warn">31 chars — borderline</span></div>
+      <div class="headline-pill" style="border-color: var(--web-coral)"><span class="headline-pill-text">Affordable Luxury Living in Western Thane</span><span class="headline-pill-count over">41 chars ✗</span></div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-title">Google Display Ads — Quick Reference</div>
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">Character Limits</div>
+        <table class="limit-table">
+          <tbody>
+            <tr><td class="field-name">Short Headline</td><td><span class="char-count char-strict">30 chars</span></td></tr>
+            <tr><td class="field-name">Long Headline</td><td><span class="char-count char-warn">90 chars</span></td></tr>
+            <tr><td class="field-name">Description</td><td><span class="char-count char-warn">90 chars</span></td></tr>
+            <tr><td class="field-name">Business Name</td><td><span class="char-count">25 chars</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="card-title">What Marketing Provides for Display</div>
+        <ul class="checklist">
+          <li><span class="check-icon check-yes">✓</span>2–3 short headlines (30 chars each)</li>
+          <li><span class="check-icon check-yes">✓</span>1–2 long headlines (90 chars each)</li>
+          <li><span class="check-icon check-yes">✓</span>2–3 descriptions (90 chars each)</li>
+          <li><span class="check-icon check-yes">✓</span>Images at correct ratios (1200×628, 1200×1200, 960×1200)</li>
+          <li><span class="check-icon check-rule">!</span>Do not rely on image text — Display images may be cropped</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  WHATSAPP                                  -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="whatsapp">
+  <div class="section-header">
+    <div>
+      <div class="section-title">WhatsApp Copy</div>
+      <div class="section-desc">Used for bot flows, drip campaigns, and broadcast blasts to warm leads. WhatsApp messages are read in an intimate, conversational context — they need to feel personal, not like an advertisement.</div>
+    </div>
+    <span class="platform-badge badge-wa">WhatsApp · Bot · Broadcast</span>
+  </div>
+
+  <div class="two-col" style="margin-bottom:24px;">
+    <div class="card">
+      <div class="card-title">Character Limits</div>
+      <table class="limit-table">
+        <tbody>
+          <tr>
+            <td><div class="field-name">Message body</div><div class="field-note">No hard platform limit, but...</div></td>
+            <td><span class="char-count char-warn">Keep under 300 chars</span></td>
+          </tr>
+          <tr>
+            <td><div class="field-name">Button labels</div><div class="field-note">Quick reply / CTA buttons</div></td>
+            <td><span class="char-count char-strict">25 chars</span></td>
+          </tr>
+          <tr>
+            <td><div class="field-name">List item title</div></td>
+            <td><span class="char-count char-strict">24 chars</span></td>
+          </tr>
+          <tr>
+            <td><div class="field-name">Template header</div><div class="field-note">Approved template messages</div></td>
+            <td><span class="char-count">60 chars</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">WhatsApp Formatting Codes</div>
+      <table class="limit-table">
+        <tbody>
+          <tr><td class="field-name">*Bold text*</td><td>Wrap in single asterisks</td></tr>
+          <tr><td class="field-name">_Italic text_</td><td>Wrap in underscores</td></tr>
+          <tr><td class="field-name">~Strikethrough~</td><td>Wrap in tildes (use sparingly)</td></tr>
+          <tr><td class="field-name">```Monospace```</td><td>Triple backticks (rarely needed)</td></tr>
+          <tr><td class="field-name">Emojis</td><td>Use 1–2 per message, not scattered throughout</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="do-dont">
+    <div class="do-box">
+      <div class="do-label">✓ Do this</div>
+      <div class="example-item">Write in first person: "I thought you'd want to know about this before it goes live publicly."</div>
+      <div class="example-item">Use the lead's name in the first line if CRM allows: "Hi Rahul,"</div>
+      <div class="example-item">One clear CTA per message. "Reply YES to get the brochure" or "Click below for prices."</div>
+      <div class="example-item">Keep paragraphs to 1–2 lines. Short = readable on mobile.</div>
+      <div class="example-item">Use *bold* for the single most important detail: price, dates, offer.</div>
+    </div>
+    <div class="dont-box">
+      <div class="dont-label">✗ Avoid this</div>
+      <div class="example-item">Never start with "Dear Sir/Ma'am." Feels like spam immediately.</div>
+      <div class="example-item">Don't use hashtags on WhatsApp — they serve no function and look strange.</div>
+      <div class="example-item">Don't send walls of text. If you need more than 5 lines, restructure.</div>
+      <div class="example-item">Don't put more than 2 CTAs: "Call / WhatsApp / Visit / Register / Download" = user confusion = no action.</div>
+      <div class="example-item">Don't make the first line promotional: "GREAT OFFER! LIMITED TIME!" — leads block this immediately.</div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-title">Sample WhatsApp Message — Site Visit Nudge</div>
+    <div class="copy-example" style="max-width: 420px; border-radius: 12px;">
+      <div class="copy-label">Message to a warm lead who filled a form</div>
+      <div class="copy-text">
+        Hi Rahul 👋<br><br>
+        You'd registered interest in [Project Name] last week.<br><br>
+        Just to let you know — *the launch pricing is valid only till [date]*. A lot of registrations are coming in.<br><br>
+        Would you like to visit the site this weekend? I can arrange a private walkthrough at a time that works for you.<br><br>
+        Just reply with a timing 🗓️
+      </div>
+      <div class="copy-char">Tone: conversational, personal, low-pressure. One CTA (visit). No hashtags.</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SMS                                       -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="sms">
+  <div class="section-header">
+    <div>
+      <div class="section-title">SMS Templates</div>
+      <div class="section-desc">SMS has the highest open rate of any channel (98%) but the least patience. Every character costs money — literally. TRAI regulations also govern what you can and cannot send.</div>
+    </div>
+    <span class="platform-badge badge-sms">SMS · Bulk · DLT</span>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-box"><div class="stat-number">160</div><div class="stat-label">Characters in a single SMS. Beyond this, it splits into 2 messages (153 chars each) and costs double.</div></div>
+    <div class="stat-box"><div class="stat-number">98%</div><div class="stat-label">Open rate for SMS. Higher than email (20%), higher than WhatsApp blasts. But also lower trust.</div></div>
+    <div class="stat-box"><div class="stat-number">7s</div><div class="stat-label">Average time a user decides whether to engage or dismiss an SMS. Hook must be instant.</div></div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-title">TRAI / DLT Rules — Critical for Compliance</div>
+    <div class="callout callout-warn">
+      <span class="callout-icon">⚠️</span>
+      <div>
+        <strong>All SMS templates must be pre-registered on the DLT (Distributed Ledger Technology) platform</strong> before they can be sent. This is an Indian regulatory requirement. Marketing must finalize the exact template wording and share it with Digital/XCC who register it. <strong>You cannot deviate from the registered template</strong> — even one word change requires re-registration.
+      </div>
+    </div>
+
+    <div class="two-col" style="margin-top:20px;">
+      <div>
+        <ul class="checklist">
+          <li><span class="check-icon check-rule">!</span>Template must include brand name / sender ID</li>
+          <li><span class="check-icon check-rule">!</span>Must not promise returns or guaranteed income (SEBI issue)</li>
+          <li><span class="check-icon check-rule">!</span>Opt-out option required for promotional SMS</li>
+          <li><span class="check-icon check-yes">✓</span>Transactional SMS (booking confirmation, OTP) has different rules — check with Digital</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="checklist">
+          <li><span class="check-icon check-rule">!</span>No special characters like &amp;, &lt;, &gt; — can break SMS delivery</li>
+          <li><span class="check-icon check-rule">!</span>Avoid smart quotes (" ") — use straight quotes (" ") or omit</li>
+          <li><span class="check-icon check-yes">✓</span>Include project RERA number if advertising pricing</li>
+          <li><span class="check-icon check-yes">✓</span>Short link mandatory — use bit.ly or similar (Digital manages)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section">
+    <div class="sub-title">SMS Template — Structure & Example</div>
+    <div class="two-col">
+      <div>
+        <div class="copy-label">Good SMS template (within 160 chars)</div>
+        <div class="copy-example">
+          <div class="copy-text">Xanadu: 2BHK in Thane West from Rs.85L. No EMI for 12 months. Limited units. Register: bit.ly/xyz. RERA: P12345. Reply STOP to opt out.</div>
+          <div class="copy-char">134 chars ✓ — single SMS, RERA included, opt-out present</div>
+        </div>
+      </div>
+      <div>
+        <div class="copy-label">What each part should contain</div>
+        <div class="copy-example">
+          <div class="copy-text" style="font-size:13px; line-height:2;">
+            <strong>[Brand name]:</strong> Always start with this.<br>
+            <strong>[Property type + location]:</strong> Immediate context.<br>
+            <strong>[Price]:</strong> The #1 trigger.<br>
+            <strong>[1 USP]:</strong> Pay plan, amenity, connectivity.<br>
+            <strong>[Urgency signal]:</strong> "Limited units" / "Offer ends."<br>
+            <strong>[CTA link]:</strong> Short URL.<br>
+            <strong>[RERA no.]:</strong> Compliance.<br>
+            <strong>[Opt-out]:</strong> "Reply STOP" — mandatory.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  WEBSITE                                   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="website">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Website & Landing Page</div>
+      <div class="section-desc">Every rupee of digital spend drives traffic to a landing page. If the page doesn't convert, the budget is wasted. These are the basics Marketing should understand when briefing the agency.</div>
+    </div>
+    <span class="platform-badge badge-web">Landing Page · Microsite · Project Website</span>
+  </div>
+
+  <div class="callout callout-tip" style="margin-bottom: 28px;">
+    <span class="callout-icon">💡</span>
+    <div>
+      <strong>The Golden Rule:</strong> A landing page has one job — convert a visitor into a lead. Every element should serve that job or be removed. Marketing should never request elements that look good but don't convert (e.g. animated intros that delay content, pop-up videos, long brand narratives above the fold).
+    </div>
+  </div>
+
+  <!-- Above the fold -->
+  <div class="sub-section">
+    <div class="sub-title">The Above-the-Fold Rule</div>
+    <div class="two-col">
+      <div>
+        <p style="font-size:14px; color:var(--text-secondary); margin-bottom:16px;">Everything a visitor sees <strong>before scrolling</strong> is "above the fold." On mobile (where 80%+ of your traffic lands), this is roughly 600px — about 4 lines of text plus a button. If the price, project name, and form/CTA are not visible immediately, you lose the visitor.</p>
+        <ul class="checklist">
+          <li><span class="check-icon check-yes">✓</span><strong>Project name + location</strong> must be visible immediately</li>
+          <li><span class="check-icon check-yes">✓</span><strong>Starting price</strong> — the single highest converting piece of information</li>
+          <li><span class="check-icon check-yes">✓</span><strong>One CTA button</strong> — "Book a Site Visit" or "Get Price Details"</li>
+          <li><span class="check-icon check-yes">✓</span>A high-quality elevation image or render as the hero visual</li>
+          <li><span class="check-icon check-rule">!</span>No autoplay video above the fold — kills load speed</li>
+          <li><span class="check-icon check-rule">!</span>No animated intros or splash screens — visitors bounce before they load</li>
+        </ul>
+      </div>
+      <div class="card" style="background: var(--off-white);">
+        <div class="card-title">Recommended Above-Fold Structure</div>
+        <div style="background: var(--warm-white); border: 1px solid var(--border); border-radius:8px; padding:16px; font-size:13px; line-height:1.9;">
+          <div style="background: #E8E4DC; border-radius:6px; padding:8px 12px; text-align:center; margin-bottom:8px; color:var(--text-secondary);">Header: Logo + Phone Number</div>
+          <div style="background: #D5CFC5; border-radius:6px; padding:20px 12px; text-align:center; margin-bottom:8px; color:var(--text-secondary);">Hero Image — Elevation / Render</div>
+          <div style="background: var(--navy); border-radius:6px; padding:10px 12px; text-align:center; margin-bottom:8px; color:white; font-weight:600; font-size:14px;">PROJECT NAME — Thane West<br><span style="font-size:12px; font-weight:400; opacity:0.7;">2 &amp; 3 BHK | Starting ₹85 Lakh*</span></div>
+          <div style="background: var(--web-coral); border-radius:6px; padding:10px 12px; text-align:center; color:white; font-weight:600;">Get Price Details →</div>
+        </div>
+        <div style="font-size:12px; color:var(--text-muted); margin-top:10px;">↑ This entire block should be visible without scrolling on mobile</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form optimization -->
+  <div class="sub-section">
+    <div class="sub-title">Lead Form — Keep It Short</div>
+    <div class="callout callout-info" style="margin-bottom:20px;">
+      <span class="callout-icon">ℹ️</span>
+      <div>Every extra field in a form <strong>reduces conversion rate by 10–15%</strong>. A form asking for Name, Phone, Email, Budget, Configuration, and Possession Timeline will convert far fewer visitors than a form asking for Name and Phone only. Start minimal; XCC qualifies the rest on the call.</div>
+    </div>
+    <div class="three-col">
+      <div class="card">
+        <div class="card-title" style="color: var(--google-green);">Ideal Form — 2 Fields</div>
+        <ul class="checklist">
+          <li><span class="check-icon check-yes">✓</span>Name</li>
+          <li><span class="check-icon check-yes">✓</span>Phone Number</li>
+        </ul>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:12px;">Highest conversion. XCC qualifies rest on the call.</div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color: var(--sms-amber);">Acceptable — 3 Fields</div>
+        <ul class="checklist">
+          <li><span class="check-icon check-yes">✓</span>Name</li>
+          <li><span class="check-icon check-yes">✓</span>Phone Number</li>
+          <li><span class="check-icon check-yes">✓</span>Email (optional)</li>
+        </ul>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:12px;">Adds email for drip campaigns. Still converts well.</div>
+      </div>
+      <div class="card">
+        <div class="card-title" style="color: var(--web-coral);">Avoid — 4+ Fields</div>
+        <ul class="checklist">
+          <li><span class="check-icon check-rule">!</span>Name + Phone + Email + Budget + Config + Possession</li>
+        </ul>
+        <div style="font-size:13px; color:var(--text-secondary); margin-top:12px;">Converts poorly. Use only for premium / ultra-HNI products where lead quality > volume.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page structure -->
+  <div class="sub-section">
+    <div class="sub-title">Landing Page Scroll Order — What Goes Where</div>
+    <div class="card">
+      <table class="limit-table">
+        <thead>
+          <tr><th>Section</th><th>Purpose</th><th>Marketing's role</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Hero + Form</strong> <span class="tag-important">Above fold</span></td>
+            <td>Capture the lead immediately</td>
+            <td>Provide headline, sub-headline, CTA button text, hero image brief</td>
+          </tr>
+          <tr>
+            <td><strong>2. About the Project</strong></td>
+            <td>Sell the dream in 2–3 lines</td>
+            <td>Write a 50-word project description. Lifestyle-led, not feature-led.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Key Highlights</strong></td>
+            <td>Scannable USPs for quick decision</td>
+            <td>Provide exactly 4–6 highlights as short phrases, not paragraphs.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Unit Plans</strong> (blurred for teaser)</td>
+            <td>Trigger curiosity + form submission</td>
+            <td>Confirm which configs to show. Blurred unit plans drive form fills.</td>
+          </tr>
+          <tr>
+            <td><strong>5. Amenities</strong></td>
+            <td>Build aspiration</td>
+            <td>List amenities with icons. Limit to 12 — more looks like padding.</td>
+          </tr>
+          <tr>
+            <td><strong>6. Location Map</strong></td>
+            <td>Answer "where exactly is this?"</td>
+            <td>List 5–6 key landmarks with distance/drive time. Commute is king for MMR.</td>
+          </tr>
+          <tr>
+            <td><strong>7. Developer Credibility</strong></td>
+            <td>Build trust, reduce drop-off</td>
+            <td>Provide: developer name, years in business, units delivered, key projects.</td>
+          </tr>
+          <tr>
+            <td><strong>8. Footer + RERA</strong></td>
+            <td>Compliance + final CTA</td>
+            <td>Provide RERA number(s). Include a final lead form in footer.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CTA button copy -->
+  <div class="sub-section">
+    <div class="sub-title">CTA Button Copy — What Works vs. What Doesn't</div>
+    <div class="do-dont">
+      <div class="do-box">
+        <div class="do-label">✓ High-converting CTAs</div>
+        <div class="example-item">"Get Price Details" — leads to an immediate, specific action</div>
+        <div class="example-item">"Book a Free Site Visit" — free reduces friction</div>
+        <div class="example-item">"Download Brochure" — clear value exchange</div>
+        <div class="example-item">"Check Unit Availability" — creates urgency via scarcity framing</div>
+        <div class="example-item">"Get Today's Offer" — time-sensitive, benefit-led</div>
+      </div>
+      <div class="dont-box">
+        <div class="dont-label">✗ Low-converting CTAs</div>
+        <div class="example-item">"Submit" — tells the user nothing about what happens next</div>
+        <div class="example-item">"Learn More" — vague, non-committal</div>
+        <div class="example-item">"Click Here" — no value, no context</div>
+        <div class="example-item">"Contact Us" — sounds like a customer complaint portal</div>
+        <div class="example-item">"Enquire Now" — passive. Leads, not customers, enquire.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  PRINCIPLES                                -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="section" id="principles">
+  <div class="section-header">
+    <div>
+      <div class="section-title">Real Estate Copy Principles</div>
+      <div class="section-desc">Platform rules are the constraint. These principles are the craft. They apply across every channel — Meta, Google, WhatsApp, SMS, website, and the CP Kit messaging guide.</div>
+    </div>
+    <span class="platform-badge badge-principles">Universal · All Channels</span>
+  </div>
+
+  <div class="three-col" style="margin-bottom:28px;">
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 1</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">Lead with the buyer's pain, not the product's features</div>
+      <div style="font-size:14px; color:var(--text-secondary);">MMR buyers feel: rent drain, long commute, cramped space, status anxiety. Your first line should name their problem, not describe your amenities.</div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 2</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">Price is always the most powerful piece of copy</div>
+      <div style="font-size:14px; color:var(--text-secondary);">If you know the price, put it in the first line. "Starting ₹85L" outperforms any lifestyle line in click-through rate, consistently, every time. Don't bury it.</div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 3</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">One message, one action per ad</div>
+      <div style="font-size:14px; color:var(--text-secondary);">Don't ask users to "Call / WhatsApp / Visit / Register / Download." Pick one. A confused user does nothing. Every ad should have one CTA and one desired outcome.</div>
+    </div>
+  </div>
+
+  <div class="three-col">
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 4</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">Commute is the #1 location trigger for MMR</div>
+      <div style="font-size:14px; color:var(--text-secondary);">Don't say "central location." Say "12 minutes to Thane Station" or "35 min to BKC." Specific, provable commute time converts better than vague location descriptors.</div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 5</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">Urgency must be real, not manufactured</div>
+      <div style="font-size:14px; color:var(--text-secondary);">"Limited units" works — once. If every launch has "only 5 units left" for 3 months, buyers stop believing it. Use real urgency signals: price revision date, inventory data, genuine deadlines.</div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="color:var(--principle-purple);">Principle 6</div>
+      <div style="font-family:'DM Serif Display',serif; font-size:20px; margin-bottom:10px; line-height:1.2;">The pay plan is a pricing tool, not a footnote</div>
+      <div style="font-size:14px; color:var(--text-secondary);">"10:90 plan" or "No EMI till possession" changes the buyer's mental maths entirely. A ₹1.2Cr home feels attainable when the CTA is "Book at ₹12L." Always surface the pay plan.</div>
+    </div>
+  </div>
+
+  <!-- Quick reference master table -->
+  <div class="sub-section">
+    <div class="sub-title">Master Quick Reference — All Platforms at a Glance</div>
+    <div class="card">
+      <table class="limit-table">
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th>Key Field</th>
+            <th>Hard Limit</th>
+            <th>Provide how many?</th>
+            <th>Hashtags?</th>
+            <th>Key Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Meta (FB + IG)</strong></td>
+            <td>Primary Text</td>
+            <td><span class="char-count char-warn">125 chars</span> (hook)</td>
+            <td>1–3 variations</td>
+            <td>FB: No. IG ads: 3–5</td>
+            <td>Hook in first 125 chars</td>
+          </tr>
+          <tr>
+            <td><strong>Meta</strong></td>
+            <td>Headline</td>
+            <td><span class="char-count char-strict">27 chars</span> (safe)</td>
+            <td><strong>5+ variations</strong> for A/B</td>
+            <td>None</td>
+            <td>Provide min 5 for A/B testing</td>
+          </tr>
+          <tr>
+            <td><strong>Google Search (RSA)</strong></td>
+            <td>Headlines</td>
+            <td><span class="char-count char-strict">30 chars</span> each</td>
+            <td><strong>10–15 headlines</strong></td>
+            <td>None</td>
+            <td>Each headline must be self-contained</td>
+          </tr>
+          <tr>
+            <td><strong>Google Search (RSA)</strong></td>
+            <td>Descriptions</td>
+            <td><span class="char-count char-warn">90 chars</span> each</td>
+            <td>3–4 descriptions</td>
+            <td>None</td>
+            <td>Include price + CTA in at least one</td>
+          </tr>
+          <tr>
+            <td><strong>WhatsApp</strong></td>
+            <td>Message body</td>
+            <td>Keep under 300 chars</td>
+            <td>1 message</td>
+            <td>Never</td>
+            <td>Conversational tone; one CTA only</td>
+          </tr>
+          <tr>
+            <td><strong>SMS</strong></td>
+            <td>Full message</td>
+            <td><span class="char-count char-strict">160 chars</span></td>
+            <td>1 template (DLT registered)</td>
+            <td>Never</td>
+            <td>Must include RERA no. + opt-out</td>
+          </tr>
+          <tr>
+            <td><strong>Landing Page CTA</strong></td>
+            <td>Button text</td>
+            <td>3–5 words ideal</td>
+            <td>1 primary CTA</td>
+            <td>Never</td>
+            <td>Benefit-led: "Get Price" not "Submit"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Handoff checklist -->
+  <div class="sub-section">
+    <div class="sub-title">Handoff Checklist — Before Marketing sends copy to Digital</div>
+    <div class="callout callout-tip" style="margin-bottom:20px;">
+      <span class="callout-icon">📋</span>
+      <div>Run through this before sharing copy with Team Digital. A clean handoff means the campaign goes live faster and comes back with fewer revision cycles.</div>
+    </div>
+    <div class="two-col">
+      <ul class="checklist">
+        <li><span class="check-icon check-yes">✓</span>For Meta: Provided at least 5 headline variations (27 chars each)</li>
+        <li><span class="check-icon check-yes">✓</span>For Meta: Primary text hook is in the first 125 characters</li>
+        <li><span class="check-icon check-yes">✓</span>For Google RSA: Provided 10+ headlines (30 chars) and 3+ descriptions (90 chars)</li>
+        <li><span class="check-icon check-yes">✓</span>Price is visible in the copy (not hidden or mentioned only in footnotes)</li>
+        <li><span class="check-icon check-yes">✓</span>Each ad has a single, clear CTA — not multiple competing calls-to-action</li>
+      </ul>
+      <ul class="checklist">
+        <li><span class="check-icon check-yes">✓</span>WhatsApp message confirmed to be under 300 chars with no hashtags</li>
+        <li><span class="check-icon check-yes">✓</span>SMS template is under 160 chars and includes RERA number and opt-out</li>
+        <li><span class="check-icon check-yes">✓</span>SMS template is ready for DLT registration (exact wording locked)</li>
+        <li><span class="check-icon check-yes">✓</span>Website copy includes location-specific commute times, not generic "central location"</li>
+        <li><span class="check-icon check-yes">✓</span>All copy has been approved per the creative approval process (manager sign-off)</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</div><!-- end main -->
+
+<!-- FOOTER -->
+<div class="doc-footer">
+  <div><strong>Xanadu Realty</strong> — Marketing Team Internal Reference · 2025–26</div>
+  <div>For queries: Co-ordinate with Team Digital (MMR)</div>
+</div>
+
+</body>
+</html>
